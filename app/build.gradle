@@ -87,7 +87,7 @@ android {
         buildConfigField 'boolean', 'CI', ciBuild.toString()
 
         // arguments to be passed to functional tests
-        testInstrumentationRunner "com.nextcloud.client.ScreenshotTestRunner"
+        testInstrumentationRunner "de.EstateGo.client.ScreenshotTestRunner"
         testInstrumentationRunnerArgument "TEST_SERVER_URL", "${NC_TEST_SERVER_BASEURL}"
         testInstrumentationRunnerArgument "TEST_SERVER_USERNAME", "${NC_TEST_SERVER_USERNAME}"
         testInstrumentationRunnerArgument "TEST_SERVER_PASSWORD", "${NC_TEST_SERVER_PASSWORD}"
@@ -119,17 +119,17 @@ android {
         productFlavors {
             // used for f-droid
             generic {
-                applicationId 'com.nextcloud.client'
+                applicationId 'de.EstateGo.client'
                 dimension "default"
             }
 
             gplay {
-                applicationId 'com.nextcloud.client'
+                applicationId 'de.EstateGo.client'
                 dimension "default"
             }
 
             huawei {
-                applicationId 'com.nextcloud.client'
+                applicationId 'de.EstateGo.client'
                 dimension "default"
             }
 

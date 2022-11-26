@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/standard_padding"
             android:contentDescription="@string/app_name"
-            android:src="@drawable/logo" />
+            android:src="@drawable/notification_icon" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -82,7 +82,8 @@
                         android:paddingStart="@dimen/standard_padding"
                         android:paddingEnd="@dimen/alternate_padding_right"
                         android:scrollbars="vertical"
-                        android:textColor="@color/login_text_color">
+                        android:textColor="@color/login_text_color"
+                        android:text="https://app.estatego.de">
 
                         <requestFocus />
 
